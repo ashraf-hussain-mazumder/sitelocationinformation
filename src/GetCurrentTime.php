@@ -32,7 +32,7 @@ class GetCurrentTIme {
     $current_time = $this->currentTime->getCurrentTime();
     $type = 'custom';
     $format = 'jS M Y - g:i A';
-	$formatted_time = $this->formattedTime->format($current_time, $type, $format, $timezone, $langcode = NULL,);
+    $formatted_time = $this->formattedTime->format($current_time, $type, $format, $timezone, $langcode = NULL,);
     return array(
       'country' => $country,
       'city' => $city,
