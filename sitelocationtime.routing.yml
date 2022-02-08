@@ -1,0 +1,7 @@
+sitelocationtime.get_site_location:
+  path: '/admin/config/get_site_location'
+  defaults:
+    _form: Drupal\sitelocationtime\Form\getSiteLocationForm
+    _title: 'Get Site Location Form'
+  requirements:
+    _permission: 'access administration pages'

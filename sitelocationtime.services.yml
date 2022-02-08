@@ -1,0 +1,4 @@
+services:
+  sitelocationtime.get_current_time:
+    class: Drupal\sitelocationtime\GetCurrentTime
+    arguments: ['@config.factory', '@datetime.time', '@date.formatter']

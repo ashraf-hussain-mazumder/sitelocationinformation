@@ -1,0 +1,5 @@
+sitelocationtime.get_site_location:
+  title: 'Get Site Location'
+  route_name: sitelocationtime.get_site_location
+  description: 'Get Site Location'
+  parent: system.admin_config_system

@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Site Location and Current TIme module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function sitelocationtime_theme($existing, $type, $theme, $path) {
+  return [
+    'site_location_time' => [
+      'variables' => [
+        'country' => NULL,
+        'city' => NULL,
+        'cur_date_time' => NULL,
+      ],
+    ],
+  ];
+}

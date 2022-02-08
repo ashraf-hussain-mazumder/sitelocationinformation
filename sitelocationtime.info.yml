@@ -1,0 +1,5 @@
+name: Site Location and Current Time
+type: module
+description: Get the Site Location and Current Time for the location.
+core_version_requirement: ^9
+package: Custom
