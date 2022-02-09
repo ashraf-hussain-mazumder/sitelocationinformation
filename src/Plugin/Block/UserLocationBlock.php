@@ -55,11 +55,6 @@ class UserLocationBlock extends BlockBase implements ContainerFactoryPluginInter
       '#country' => $location_details['country'],
       '#city' => $location_details['city'],
       '#cur_date_time' => $location_details['formatted_time'],
-      '#cache' => [
-        'tags' => [
-          'SITE_LOCATION_TIME_TAG'
-        ],
-      ],
     ];
   }
 
