@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\sitelocationtime\GetCurrentTIme
+ * Contains \Drupal\sitelocationtime\GetCurrentTime
  */
 
 namespace Drupal\sitelocationtime;
@@ -10,7 +10,7 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Component\Datetime\Time;
 use Drupal\Core\Datetime\DateFormatter;
 
-class GetCurrentTIme {
+class GetCurrentTime {
   protected $configFactory;
   protected $currentTime;
   protected $formattedTime;

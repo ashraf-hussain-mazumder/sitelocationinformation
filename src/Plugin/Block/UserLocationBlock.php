@@ -11,7 +11,7 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Access\AccessResult;
-use Drupal\sitelocationtime\GetCurrentTIme;
+use Drupal\sitelocationtime\GetCurrentTime;
 
 /**
  * User Location Salutation block.
@@ -26,7 +26,7 @@ class UserLocationBlock extends BlockBase implements ContainerFactoryPluginInter
 
   protected $current_time;
 
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, GetCurrentTIme $current_time) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, GetCurrentTime $current_time) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->current_time = $current_time;
   }
