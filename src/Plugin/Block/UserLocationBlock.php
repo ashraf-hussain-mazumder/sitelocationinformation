@@ -11,6 +11,7 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Cache\Cache;
 use Drupal\sitelocationtime\GetCurrentTime;
 
 /**
@@ -60,6 +61,15 @@ class UserLocationBlock extends BlockBase implements ContainerFactoryPluginInter
         ],
       ],
     ];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags() {
+    return Cache::mergeTags(parent::getCacheTags(), [
+      'config:siteLocationTime.adminsettings',
+    ]);
   }
 
   /**

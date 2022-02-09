@@ -74,7 +74,6 @@ class getSiteLocationForm extends ConfigFormBase {
       ->set('city', $form_state->getValue('city'))
       ->set('timezone', $form_state->getValue('timezone'))
       ->save();
-    \Drupal\Core\Cache\Cache::invalidateTags(array('SITE_LOCATION_TIME_TAG'));
     parent::submitForm($form, $form_state);
   }
 
