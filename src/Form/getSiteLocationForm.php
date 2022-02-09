@@ -87,9 +87,9 @@ class getSiteLocationForm extends ConfigFormBase {
       'America/New_York' => 'America/New_York',
       'Asia/Tokyo' => 'Asia/Tokyo',
       'Asia/Dubai' => 'Asia/Dubai',
-	  'Europe/Amsterdam' => 'Europe/Amsterdam',
+      'Europe/Amsterdam' => 'Europe/Amsterdam',
       'Europe/Oslo' => 'Europe/Oslo',
-	  'Europe/London' => 'Europe/London',
+      'Europe/London' => 'Europe/London',
     ];
   }
 
